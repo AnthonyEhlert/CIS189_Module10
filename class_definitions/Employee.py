@@ -66,6 +66,12 @@ class Employee:
         return self._salary
 
     def display(self):
+        '''
+        This method returns a formatted string containing the employee object first_name, last_name, address,
+        pay(salaried vs hourly and rate), and start date
+
+        :return: Formatted string containing employee object information
+        '''
         display_string = str(self._first_name) + " " + str(self._last_name)
         display_string = display_string + "\n" + str(self._address)
         if self._salaried:
